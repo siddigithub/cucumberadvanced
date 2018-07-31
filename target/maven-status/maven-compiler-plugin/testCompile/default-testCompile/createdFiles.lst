@@ -1,7 +1,0 @@
-Parallel02IT.class
-steps/LoginSteps.class
-steps/RegistrationSteps.class
-Parallel01IT.class
-Base/ContextSteps.class
-Page/HomePage.class
-Runner/LoginRunner.class
