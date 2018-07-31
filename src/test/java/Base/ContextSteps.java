@@ -1,10 +1,12 @@
 package Base;
 
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class ContextSteps {
@@ -15,7 +17,9 @@ public class ContextSteps {
         System.setProperty("Webdriver.chrome.driver", "//Users//usachary//Downloads//chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        driver.navigate().to("http://demo.guru99.com/V4/");
+        Properties properties = loadProperties("config.properties");
+        System.out.println("URL IS ->"+ properties.getProperty("URL"));
+        driver.navigate().to(properties.getProperty("URL"));
     }
 
     public WebDriver getDriver(){
@@ -25,5 +29,15 @@ public class ContextSteps {
     public void teardown(){
         driver.close();
         driver.quit();
+    }
+
+    public Properties loadProperties(String filename){
+        Properties properties = new Properties();
+        try{
+            properties.load(this.getClass().getClassLoader().getResourceAsStream(filename));
+        }catch(IOException ex){
+            throw new RuntimeException(ex);
+        }
+        return properties;
     }
 }
