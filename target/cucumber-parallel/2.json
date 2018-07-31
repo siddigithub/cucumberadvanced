@@ -1,0 +1,58 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "id": "registration;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 304241786,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I navigate to the registration page",
+            "match": {
+              "location": "RegistrationSteps.given_i_navigate_to_the_registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 82840,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I attempt to register with user details",
+            "match": {
+              "location": "RegistrationSteps.when_i_attempt_to_register_with_user_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 72639,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the registration is sucessfull",
+            "match": {
+              "location": "RegistrationSteps.then_the_registration_is_sucessfull()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Registration",
+    "description": "As a user\nI need to regigser to guru99\nso that I am successfully login to the system",
+    "id": "registration",
+    "keyword": "Feature",
+    "uri": "/Users/usachary/Documents/cucumberadvanced/src/test/resources/features/Registration.feature"
+  }
+]
