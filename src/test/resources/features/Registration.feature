@@ -6,5 +6,3 @@ Feature: Registration
     Given I navigate to the registration page
     When I attempt to register with user details
     Then the registration is sucessfull
-  Scenario: Register failed
-    Given I have '42' cucumber in my belly

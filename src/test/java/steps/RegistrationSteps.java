@@ -20,9 +20,4 @@ public class RegistrationSteps {
     public void then_the_registration_is_sucessfull(){
         System.out.println("The registration is successful");
     }
-
-    @Given("I have '(.*)' cucumber in my belly")
-    public void i_have_42_cucumber_in_my_belly(String input){
-
-    }
 }
