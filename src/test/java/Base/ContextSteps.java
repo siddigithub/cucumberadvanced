@@ -2,7 +2,6 @@ package Base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;

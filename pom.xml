@@ -73,6 +73,28 @@
                     </includes>
                 </configuration>
             </plugin>
+            <!--Master thought cucumber reporting plugin and surefire plugin will be used together for custom cucumber reporting-->
+            <!--<plugin>-->
+                <!--<groupId>net.masterthought</groupId>-->
+                <!--<artifactId>maven-cucumber-reporting</artifactId>-->
+                <!--<version>3.0.0</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>execution</id>-->
+                        <!--<phase>verify</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>generate</goal>-->
+                        <!--</goals>-->
+                        <!--<configuration>-->
+                            <!--<projectName>cucumberadvanced</projectName>-->
+                            <!--<outputDirectory>${project.build.directory}/site/cucumber-reports-html</outputDirectory>-->
+                            <!--&lt;!&ndash;<enableFlashCharts>false</enableFlashCharts>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<skippedFails>true</skippedFails>&ndash;&gt;-->
+                            <!--<cucumberOutput>${project.build.directory}/site/cucumber.json</cucumberOutput>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 </project>
